@@ -3,11 +3,8 @@ import React from 'react';
 import { Text, View, Button } from 'react-native';
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { enableScreens } from 'react-native-screens';
 import Tabs from './tabs/Tabs';
-
-// Optional: better perf on Android
-enableScreens(true);
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,11 +28,11 @@ const MyTheme = {
 };
 export default function App() {
   return (
-    <View style={{ flex: 1, backgroundColor: '#bbbbbbff' }}>
+    <SafeAreaProvider style={{ flex: 1, backgroundColor: '#bbbbbbff' }}>
       <NavigationContainer >
         <Tabs />
       </NavigationContainer>
-    </View>
+    </SafeAreaProvider>
   );
 }
 
