@@ -1,0 +1,13 @@
+# GET http://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=astro&output=json
+
+
+
+# GET http://www.7timer.info/bin/astro.php?lon=113.17&lat=23.09&ac=0&lang=en&unit=metric&output=internal&tzshift=0
+
+
+
+# GET http://www.7timer.info/bin/api.pl?lon=-74.006&lat=40.7128&product=civil&output=jsone
+
+
+
+GET https://timeapi.io/api/TimeZone/coordinate?latitude=51.0447&longitude=-114.0719

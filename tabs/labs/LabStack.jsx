@@ -1,8 +1,8 @@
-import { View, Text, Button } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { NavigationContainer } from '@react-navigation/native';
 import LabOne from './screens/lab1/LabOne';
 import LabTwo from './screens/lab2/LabTwo';
+import LabThree from './screens/lab3/LabThree';
+import LabFour from './screens/lab4/LabFour';
 import LabHome from './LabHome';
 
 const LabStack = ({ navigation }) => {
@@ -29,6 +29,16 @@ const LabStack = ({ navigation }) => {
                 name="Lab-Two"
                 component={LabTwo}
                 options={{ title: 'Lab Two' }}
+            />
+            <Stack.Screen
+                name="Lab-Three"
+                component={LabThree}
+                options={{ title: 'Lab Three' }}
+            />
+            <Stack.Screen
+                name="Lab-Four"
+                component={LabFour}
+                options={{ title: 'Lab Four' }}
             />
         </Stack.Navigator>
     );

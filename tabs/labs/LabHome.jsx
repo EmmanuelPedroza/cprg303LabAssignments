@@ -11,6 +11,12 @@ const LabHome = ({ navigation }) => {
       <TouchableOpacity style={styles.labItem} onPress={() => navigation.navigate('Lab-Two')}>
         <Text style={styles.labText}>Lab Two</Text>
       </TouchableOpacity>
+      <TouchableOpacity style={styles.labItem} onPress={() => navigation.navigate('Lab-Three')}>
+        <Text style={styles.labText}>Lab Three</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.labItem} onPress={() => navigation.navigate('Lab-Four')}>
+        <Text style={styles.labText}>Lab Four</Text>
+      </TouchableOpacity>
     </View>
   );
 };
